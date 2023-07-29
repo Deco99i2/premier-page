@@ -1,31 +1,42 @@
 p {
-    color: blueviolet;
-    font-family: 'Lilita One', cursive;
+    color: blueviolet; /* couleur du texte */
+    font-family: 'Lilita One', cursive; /* type de police */
     font-family: 'Marck Script', cursive;
     font-family: 'Parisienne', cursive;
-    font-size: 3em;
+    font-size: 3em; /* taille de police */
 }
 
-h1 {
-    color: brown;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 4em;
-    text-align: center;
-    padding: 150px;
-     background: #1f4037;  /* fallback for old browsers */
+h2 {
+    color: brown; /* couleur du texte */
+    background: #1f4037;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #99f2c8, #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    ;
+    background: linear-gradient(to bottom, #99f2c8, #1f4037); /* Pour créer un dégradé*/
+    padding: 80px;
+}
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* type de police  NB :  Choisir une police de caractères sans sérif est plus judicieux en termes d’accessibilité, car c’est plus facile à lire. */
+    text-align: center; /*  permet d'aligner du texte selon la valeur qu'on lui donne */
+    font-size: 4em; /* taille de plice */
+    background-image: url(renaldo.jpg); /*La propriété permettant d'indiquer une image de fond. avec un nom simple*/
+    padding: 150px;
+    background-attachment: fixed;
+    background-position: auto; /* la position de l'image de fond */
+    background-size: auto; /* dimmensionne l'image*/
 }
 .victor {
     color: brown;
+    background-color: aquamarine;
+    padding: 100px; /* l'espace dans notre élément ,, la marge de l'image*/
+    opacity: inherit; /*transparence de l'image*/
+    border-radius: 10px 30px 0px 90px; /* bordure arrondi*/
+    box-shadow: 6px 6px opx rgba(0, 0, 0,); /* ajouter de l'ombre portee*/
 }
 .derrick {
     color: blue;
-    font-weight: 700;
+    font-weight: 700; /*Mettez du texte en gras */
 }
 h2 {
-    font-style: italic;
+    font-style: italic; /* pour dire si on veut que du texte soit en italique ou non */
     font-size: 2em;
 }
 ol,ul {
@@ -35,14 +46,17 @@ a {
     font-size: 2em;
 }
 body {
-    background-color: bisque;
+    background-color: bisque; /* Pour indiquer une couleur de fond. Pour indiquer la couleur de fond de la page web, il vaut mieux l'appliquer à la balise */
+    color:black;
 }
 img {
     border-radius: <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">46 % 54 % 50 % 50 % / 49 % 47 % 53 % 51 %</font></font>;
 }
-.demo-border {
-    border: 2px;
+.bordure {
+    border:50px;
     border-radius: 20px;
+    border-radius: 10px 30px 0px 50px;
+    border: solid;
  }
  img:hover {
     opacity: o,5;
